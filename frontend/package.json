@@ -24,8 +24,11 @@
 
     "dependencies": {
 
+<<<<<<< HEAD
         "clsx": "^2.1.1",
 
+=======
+>>>>>>> e862360f96223a1f120d51c6ecd63c397b4ce841
         "framer-motion": "^12.0.6",
 
         "react": "^18.2.0",

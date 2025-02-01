@@ -1,15 +1,12 @@
-import React from 'react'
-import './styles/index.css'
+import "./styles/index.css";
 
-
+import ChatBar from "./Components/ChatBar";
 const App = () => {
-
-
-    return (
-        <div className='w-[100px] h-[100px] bg-black'>
-
-        </div>     
-    )
-}
+  return (
+    <div className="w-screen h-screen grid place-items-center  bg-black ">
+      <ChatBar />
+    </div>
+  );
+};
 
 export default App;

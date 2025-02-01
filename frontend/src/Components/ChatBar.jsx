@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
+import {motion} from "framer-motion";
 
-import {motion, AnimatePresence} from "framer-motion";
+
 const ChatBar = () => {
   const letters1 = "GPT".split("");
   const letters2 = "GCEK".split("");
@@ -135,27 +135,11 @@ const ChatBar = () => {
   );
 };
 
-/* const TextWithWaveEffect = ({text, delay}) => (
-  <motion.span
-    animate={{
-      color: ["#E5E7EB", "#727D73", "#E5E7EB", "#E5E7EB", "#E5E7EB", "#E5E7EB"],
-    }}
-    transition={{
-      duration: 1,
-      repeat: Infinity,
-      delay,
-      ease: "easeInOut",
-    }}
-    className=" text-sm "
-  >
-    {text}
-  </motion.span>
-); */
 const containerVariants = {
   hidden: {opacity: 0},
   visible: {
     opacity: 1,
-    transition: {staggerChildren: 0.06}, // Delay between letters
+    transition: {staggerChildren: 0.06},
   },
 };
 
@@ -163,11 +147,5 @@ const TextVariants = {
   hidden: {opacity: 0, y: 20},
   visible: {opacity: 1, y: 0, transition: {duration: 0.1}},
 };
-
-/* const TextWithStaqggerEffect = ({text, delay}) => (
-  <motion.span initial="hidden" animate="visible">
-    {text}
-  </motion.span>
-); */
 
 export default ChatBar;
